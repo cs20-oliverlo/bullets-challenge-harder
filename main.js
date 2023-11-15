@@ -14,10 +14,10 @@ document.addEventListener("mouseup", mouseupHandler);
 function keydownHandler(event) {
     if (event.code === "KeyW") {
         player[0].up = true;
-    } else if (event.code === "KeyD") {
-        player[0].right = true;
     } else if (event.code === "KeyA") {
         player[0].left = true;
+    } else if (event.code === "KeyD") {
+        player[0].right = true;
     } else if (event.code === "KeyS") {
         player[0].down = true;
     }
@@ -26,10 +26,10 @@ function keydownHandler(event) {
 function keyupHandler(event) {
     if (event.code === "KeyW") {
         player[0].up = false;
-    } else if (event.code === "KeyD") {
-        player[0].right = false;
     } else if (event.code === "KeyA") {
         player[0].left = false;
+    } else if (event.code === "KeyD") {
+        player[0].right = false;
     } else if (event.code === "KeyS") {
         player[0].down = false;
     }
