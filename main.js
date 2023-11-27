@@ -49,9 +49,9 @@ let canvasMidWidth = cnv.width / 2;
 let canvasMidHeight = cnv.height / 2;
 
 // Reset Variables
-let circles;
-let circleSpawnTimer = 0;
 let player;
+let circles;
+let circleSpawnTimer;
 let bullets;
 
 reset();
@@ -281,8 +281,6 @@ function newBullet(x1, y1, r1, color1, startAngle1, endAngle1, xVelocity1, yVelo
 }
 
 function reset() {
-    circles = [];
-
     player = {
         circleX: canvasMidWidth,
         circleY: canvasMidHeight,
@@ -306,6 +304,10 @@ function reset() {
         reload: 0,
         lastKeyPressed: "w"
     };
+
+    circles = [];
+
+    circleSpawnTimer = 0;
 
     bullets = [];
 }
